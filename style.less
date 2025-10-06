@@ -1,0 +1,174 @@
+@colorNew: #F16A23;
+@customClr2: #FFBC0F;
+*{
+    font-family: 'Poppins';
+}
+.background-container {
+    position: relative;
+    z-index: 1;
+    background: url('/Images/LinesBackground.svg');
+    background-size: cover;
+    &::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('/Images/Group\ 3.svg');
+    filter: blur(15px);
+    background-size: cover;
+    z-index: -1;
+    }
+}
+.custom-text {
+    color: @colorNew !important;
+}
+.hvr-underline-from-center {
+&:before {
+    background: @customClr2 !important;
+    height: 6px !important;
+    }
+
+    &:hover:before {
+        background: @customClr2 !important;
+        height: 6px !important;
+    }
+}
+
+.custom-btn {
+    border-color: @colorNew !important;
+    color: @colorNew !important;
+}
+.custom-btn {
+    &:hover {
+        border-color: black !important;
+        color: white !important;
+    }
+}
+
+.custom-labo {
+.hvr-underline-from-center {
+        &:before {
+        bottom: 20% !important;
+        background: @colorNew !important;
+        }
+    }
+}
+
+.project-based {
+&.hvr-underline-from-center {
+        &:before {
+        bottom: 20% !important;
+        }
+    }
+}
+
+.navbar-nav{
+    .nav-item{
+        padding: 0 5px;
+    }
+}
+.custom-color {
+    background-color: @colorNew !important;
+    
+}
+.hvr-radial-out:before {
+    background: black !important;
+    border-color: black !important;
+}
+//     .custom-sections.hvr-radial-out:before {
+//     background: @customClr2 !important;
+// }
+.next-btn {
+    background-color: @customClr2 !important;
+}
+.box-shadows {
+    box-shadow: 0 4px 60px #0000001A;
+}
+.lines-background {
+position: relative;
+z-index: 1;
+}
+
+.lines-background::before {
+content: "";
+position: absolute;
+top: 0; left: 0; right: 0; bottom: 0;
+background: url('/Images/lines 2.svg') no-repeat center center;
+background-size: cover;
+z-index: 1;
+opacity: 0.3;
+}
+.section-2-background{
+    background: url(/Images/Rectangle\ 19.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.custom-position {
+    z-index: 1;
+    height: 519px;
+    left: 6rem;
+    top: 2rem;
+}
+.background-color {
+    background-color: @colorNew;
+}
+.custom-sections:hover {
+    background-color: @customClr2 !important;
+    border-color: @customClr2 !important;
+    color: white;
+    cursor: pointer;
+}
+.img-white {
+display: none;
+}
+
+.border:hover .img-grey {
+display: none;
+}
+
+.border:hover .img-white {
+display: block;
+}
+.section-3-background {
+background: url(/Images/section3.jpg);
+background-size: cover;
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .custom-position {
+    z-index: 1;
+    height: 446px;
+    left: 4rem;
+}
+.position-boxes {
+    right: 3rem;
+}
+
+}
+@media (min-width: 1200px) {
+        .position-boxes{
+        position:absolute;
+        bottom: -4rem;
+        .position-row {
+            top: 9rem;
+        }
+    }
+}
+@media (min-width: 992px) {
+    .border-md-dashed {
+        border: 2px solid rgba(0, 0, 0, 0.2);
+        border-style: dashed !important;
+    }
+        .border-md-bottom {
+                        border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+
+        border-bottom-style: dashed !important;
+    }
+    .border-md-start {
+        border-left: 2px solid rgba(0, 0, 0, 0.2);
+        border-left-style: dashed !important;
+    }
+}
+
+
+
+
